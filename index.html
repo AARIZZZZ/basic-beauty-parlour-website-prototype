@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GlowUp — Get a Glow Up.</title>
+<meta name="description" content="GlowUp is Asansol's premier beauty parlour and academy. Bespoke treatments, professional courses, and transformations that last."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="pb"></div>
+
+<div id="ldr">
+  <div class="l-logo">Glow<span>Up</span></div>
+  <div class="l-wrap"><div class="l-fill" id="lf"></div></div>
+  <div class="l-pct" id="lpct">0%</div>
+</div>
+
+<div id="cdot"></div>
+<div id="crng"></div>
+<div id="clbl"></div>
+
+<button id="btt">↑</button>
+
+<div id="mob">
+  <a href="#home"         class="ml" onclick="cMob()">Home</a>
+  <a href="#services"     class="ml" onclick="cMob()">Services</a>
+  <a href="#academy"      class="ml" onclick="cMob()">Academy</a>
+  <a href="#gallery"      class="ml" onclick="cMob()">Gallery</a>
+  <a href="#testimonials" class="ml" onclick="cMob()">Reviews</a>
+  <a href="#contact"      class="ml" onclick="cMob()">Book Now</a>
+  <div class="mob-ft">© 2025 GlowUp Beauty · Asansol</div>
+</div>
+
+<nav id="nav">
+  <a href="#home" class="n-logo">
+    <span class="n-la">Glow<em>Up</em></span>
+    <span class="n-lb">Glow<em>Up</em></span>
+  </a>
+  <ul class="n-links">
+    <li><a href="#services"><span class="lt">Services</span><span class="lh">Services</span></a></li>
+    <li><a href="#academy"><span class="lt">Academy</span><span class="lh">Academy</span></a></li>
+    <li><a href="#gallery"><span class="lt">Gallery</span><span class="lh">Gallery</span></a></li>
+    <li><a href="#testimonials"><span class="lt">Reviews</span><span class="lh">Reviews</span></a></li>
+    <li><a href="#contact" class="n-cta"><span class="lt">Book Now</span><span class="lh">Book Now</span></a></li>
+  </ul>
+  <button class="ham" id="ham" onclick="tMob()">
+    <span class="hl"></span><span class="hl"></span><span class="hl"></span>
+  </button>
+</nav>
+
+
+
+<section id="home">
+  <canvas id="pc"></canvas>
+  <div class="h-l">
+    <p class="h-tag">Est. 2018 · Beauty Parlour &amp; Academy · Asansol</p>
+
+    <h1 class="h-h1">
+      <span class="lw"><span class="li">Get a</span></span>
+      <span class="lw"><span class="li">Glow <em>Up.</em></span></span>
+    </h1>
+
+    <div class="h-div"></div>
+
+    <p class="h-sub">Where every visit is a ritual and every look is crafted with intention. Step in, and step out as the most radiant version of yourself.</p>
+
+    <div class="h-btns">
+      <a href="#contact" class="btn btn-dk" data-cursor="Book">
+        <span>Book Appointment</span><span class="arr">→</span>
+      </a>
+      <a href="#academy" class="btn btn-ol" data-cursor="Explore">
+        <span>Explore Courses</span>
+      </a>
+    </div>
+
+    <div class="h-stats">
+      <div class="si">
+        <span class="sn cu" data-t="7" data-s="">0</span>
+        <span class="sl">Years of Excellence</span>
+      </div>
+      <div class="si">
+        <span class="sn cu" data-t="3200" data-s="+">0</span>
+        <span class="sl">Happy Clients</span>
+      </div>
+      <div class="si">
+        <span class="sn cu" data-t="280" data-s="+">0</span>
+        <span class="sl">Trained Professionals</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-r">
+    <div class="h-par" id="hpar">
+      
+      <svg class="h-illus" viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="hbg" cx="50%" cy="40%" r="70%"><stop offset="0%" stop-color="#e8dccb"/><stop offset="100%" stop-color="#c9b89e"/></radialGradient>
+          <radialGradient id="hsk" cx="50%" cy="45%" r="55%"><stop offset="0%" stop-color="#f2dfc8"/><stop offset="100%" stop-color="#d4a882"/></radialGradient>
+          <filter id="fb"><feGaussianBlur stdDeviation="2.5"/></filter>
+        </defs>
+        <rect width="600" height="800" fill="url(#hbg)"/>
+        <circle cx="300" cy="380" r="225" fill="rgba(255,255,255,0.09)"/>
+        <circle cx="300" cy="380" r="290" fill="none" stroke="rgba(196,168,130,0.15)" stroke-width="1"/>
+        <ellipse cx="300" cy="372" rx="142" ry="178" fill="url(#hsk)"/>
+        <ellipse cx="300" cy="540" rx="56" ry="46" fill="#e8c8a0"/>
+        <rect x="250" y="510" width="100" height="72" fill="#e8c8a0"/>
+        <ellipse cx="300" cy="235" rx="158" ry="90" fill="#3b2619"/>
+        <path d="M145 290 Q126 408 140 504 Q162 442 180 376 Q168 332 158 286Z" fill="#3b2619"/>
+        <path d="M455 290 Q474 408 460 504 Q438 442 420 376 Q432 332 442 286Z" fill="#3b2619"/>
+        <path d="M193 225 Q262 202 328 210" stroke="rgba(255,220,180,0.16)" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M220 310 Q252 298 283 308" stroke="#5a3820" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M317 308 Q348 298 380 310" stroke="#5a3820" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <ellipse cx="253" cy="334" rx="31" ry="12" fill="#2c1a10"/>
+        <ellipse cx="347" cy="334" rx="31" ry="12" fill="#2c1a10"/>
+        <ellipse cx="246" cy="330" rx="8" ry="7" fill="white" opacity="0.15"/>
+        <ellipse cx="340" cy="330" rx="8" ry="7" fill="white" opacity="0.15"/>
+        <ellipse cx="257" cy="333" rx="5" ry="5" fill="#1a0a04"/>
+        <ellipse cx="351" cy="333" rx="5" ry="5" fill="#1a0a04"/>
+        <path d="M292 354 Q284 394 270 406 Q300 416 330 406 Q316 394 308 354" fill="rgba(180,120,80,0.16)"/>
+        <path d="M261 437 Q282 426 300 429 Q318 426 339 437 Q322 454 300 458 Q278 454 261 437Z" fill="#c07060"/>
+        <path d="M261 437 Q300 445 339 437" stroke="#a05040" stroke-width="1" fill="none"/>
+        <ellipse cx="200" cy="390" rx="42" ry="25" fill="rgba(230,130,120,0.16)" filter="url(#fb)"/>
+        <ellipse cx="400" cy="390" rx="42" ry="25" fill="rgba(230,130,120,0.16)" filter="url(#fb)"/>
+        <path d="M200 602 Q300 580 400 602 L420 682 L300 670 L180 682Z" fill="#8b6f4e" opacity="0.42"/>
+        <g fill="#c4a882">
+          <circle cx="118" cy="192" r="2.5" opacity=".7"/>
+          <circle cx="482" cy="282" r="2" opacity=".6"/>
+          <circle cx="92" cy="582" r="1.8" opacity=".5"/>
+          <circle cx="508" cy="542" r="1.8" opacity=".5"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="h-badge">
+      <svg viewBox="0 0 120 120">
+        <defs><path id="ct" d="M10,60 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0"/></defs>
+        <text font-family="DM Sans,sans-serif" font-size="9" fill="rgba(250,247,242,.55)" letter-spacing="3.5">
+          <textPath href="#ct">TOP-RATED · BEAUTY PARLOUR · ACADEMY ·</textPath>
+        </text>
+      </svg>
+      <div class="h-badge-c">5★</div>
+    </div>
+    <div class="cdeco"></div>
+  </div>
+
+  <div class="scroll-h"><div class="sm"><div class="sw"></div></div><span>Scroll</span></div>
+</section>
+
+
+<div class="mqstrip"><div class="mqtrack" id="mqt">
+  <span class="mqi"><em>✦</em>Bridal Makeup<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Hair Artistry<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Skin Treatments<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Nail Design<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Professional Academy<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Body Rituals<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Wellness &amp; Spa<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Get a Glow Up<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Bridal Makeup<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Hair Artistry<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Skin Treatments<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Nail Design<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Professional Academy<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Body Rituals<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Wellness &amp; Spa<span class="mdot"></span></span>
+  <span class="mqi"><em>✦</em>Get a Glow Up<span class="mdot"></span></span>
+</div></div>
+
+
+
+<section id="services">
+  <div class="svc-hd">
+    <div>
+      <p class="ey rv">What We Offer</p>
+      <h2 class="st rv d1">Our <em>Signature</em> Services</h2>
+      <div class="rule rv d2"></div>
+      <p class="sb rv d3">Every treatment is a ritual — designed to restore, beautify, and elevate your natural radiance.</p>
+    </div>
+    <a href="#contact" class="btn btn-ol rv d2" data-cursor="View All">
+      <span>All Services</span><span class="arr">→</span>
+    </a>
+  </div>
+
+  <div class="svc-g">
+
+    <div class="sc rv d1">
+      <div class="sc-bg"></div>
+      <span class="sc-num">01</span>
+      <div class="sc-ico">✿</div>
+      <h3 class="sc-nm">Bridal Makeup</h3>
+      <p class="sc-dsc">A bespoke bridal look crafted for your most luminous day. Includes a full trial session, skin consultation, and long-wear artistry that carries you from ceremony through celebration.</p>
+      <div class="sc-ft"><span class="sc-pr">From ₹ XYZ</span><div class="sc-ar">→</div></div>
+    </div>
+
+    <div class="sc rv d2">
+      <div class="sc-bg"></div>
+      <span class="sc-num">02</span>
+      <div class="sc-ico">❋</div>
+      <h3 class="sc-nm">Skin Treatments</h3>
+      <p class="sc-dsc">Hydrafacials, chemical peels, and brightening treatments tailored precisely to your skin type by our certified aestheticians. Visible results, often from the very first session.</p>
+      <div class="sc-ft"><span class="sc-pr">From ₹ XYZ</span><div class="sc-ar">→</div></div>
+    </div>
+
+    <div class="sc rv d3">
+      <div class="sc-bg"></div>
+      <span class="sc-num">03</span>
+      <div class="sc-ico">✧</div>
+      <h3 class="sc-nm">Hair Styling</h3>
+      <p class="sc-dsc">Precision cuts, balayage, keratin smoothing, and blowouts by our master stylists. Walk in with a vision — walk out with a head-turning transformation.</p>
+      <div class="sc-ft"><span class="sc-pr">From ₹ XYZ</span><div class="sc-ar">→</div></div>
+    </div>
+
+    <div class="sc rv d1">
+      <div class="sc-bg"></div>
+      <span class="sc-num">04</span>
+      <div class="sc-ico">◈</div>
+      <h3 class="sc-nm">Nail Artistry</h3>
+      <p class="sc-dsc">Gel extensions, intricate nail art, and spa manicures by our skilled nail technicians. From quiet minimalist to bold maximalist — every nail tells a story.</p>
+      <div class="sc-ft"><span class="sc-pr">From ₹ XYZ</span><div class="sc-ar">→</div></div>
+    </div>
+
+    <div class="sc rv d2">
+      <div class="sc-bg"></div>
+      <span class="sc-num">05</span>
+      <div class="sc-ico">⊛</div>
+      <h3 class="sc-nm">Body Rituals</h3>
+      <p class="sc-dsc">Full-body waxing, threading, polishing, and relaxation wraps for complete head-to-toe care in a calm, private, unhurried environment.</p>
+      <div class="sc-ft"><span class="sc-pr">From ₹ XYZ</span><div class="sc-ar">→</div></div>
+    </div>
+
+    <div class="sc rv d3">
+      <div class="sc-bg"></div>
+      <span class="sc-num">06</span>
+      <div class="sc-ico">✦</div>
+      <h3 class="sc-nm">Wellness &amp; Spa</h3>
+      <p class="sc-dsc">Head massages, aromatherapy, and deep-conditioning scalp treatments that replenish your mind, body, and spirit long after you leave our studio.</p>
+      <div class="sc-ft"><span class="sc-pr">From ₹ XYZ</span><div class="sc-ar">→</div></div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<div class="ab-strip">
+  <div class="ab-vis rvl">
+
+   
+    <div class="ab-a">
+      <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+        <rect width="300" height="400" fill="#d4c0a5"/>
+        <ellipse cx="150" cy="178" rx="72" ry="92" fill="#c4a882" opacity=".35"/>
+        <ellipse cx="150" cy="168" rx="54" ry="68" fill="#e8c8a0" opacity=".65"/>
+        <ellipse cx="132" cy="153" rx="11" ry="5" fill="#3d2b1f" opacity=".7"/>
+        <ellipse cx="168" cy="153" rx="11" ry="5" fill="#3d2b1f" opacity=".7"/>
+        <path d="M132 208 Q150 220 168 208" stroke="#c07060" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <text x="150" y="365" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="14" fill="rgba(44,36,32,.3)" font-style="italic">Precision Artistry</text>
+      </svg>
+    </div>
+
+   
+    <div class="ab-b">
+      <svg viewBox="0 0 280 210" xmlns="http://www.w3.org/2000/svg">
+        <rect width="280" height="210" fill="#2c2420"/>
+        <circle cx="140" cy="94" r="56" fill="rgba(196,168,130,.08)" stroke="rgba(196,168,130,.18)" stroke-width="1"/>
+        <text x="140" y="182" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="13" fill="rgba(196,168,130,.45)" font-style="italic">7+ Years of Trust</text>
+      </svg>
+    </div>
+
+    <div class="ab-tag">Award Winning Studio</div>
+  </div>
+
+  <div class="rvr">
+    <p class="ey">Our Story</p>
+    <h2 class="st">Crafting <em>Beauty</em><br>Since 2018</h2>
+    <div class="rule"></div>
+    <p class="sb">GlowUp was born from a single belief — that everyone deserves to feel spectacular. What began as a boutique studio in Asansol has grown into a full-service beauty parlour and professional academy, driven by passion, precision, and genuine care for every client who walks through our doors.</p>
+    <div class="ab-fts">
+      <div class="af">
+        <div class="af-ic">+</div>
+        <div>
+          <div class="af-lb">Award-Winning Studio</div>
+          <div class="af-sb">Regional beauty awards 2022 &amp; 2024</div>
+        </div>
+      </div>
+      <div class="af">
+        <div class="af-ic">*</div>
+        <div>
+          <div class="af-lb">Certified Academy</div>
+          <div class="af-sb">Nationally recognised certificates</div>
+        </div>
+      </div>
+      <div class="af">
+        <div class="af-ic">o</div>
+        <div>
+          <div class="af-lb">Premium Products Only</div>
+          <div class="af-sb">Dermatologist-tested, cruelty-free</div>
+        </div>
+      </div>
+      <div class="af">
+        <div class="af-ic">~</div>
+        <div>
+          <div class="af-lb">Expert Team</div>
+          <div class="af-sb">Certified professionals, 5+ yrs avg.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<section id="academy">
+  <div class="ac-wm">GLOWUP</div>
+
+  <div class="rv">
+    <p class="ey">The GlowUp Academy</p>
+    <h2 class="st">Learn. Grow. <em>Transform.</em></h2>
+    <div class="rule"></div>
+    <p class="sb">Professional training programmes designed to launch and elevate careers in the beauty industry — taught by working professionals with years of real-world experience behind them.</p>
+  </div>
+
+  <div class="ac-lay">
+    <div class="cl">
+
+      <div class="cc rv d1">
+        <div class="cc-hd" onclick="tCourse(this)">
+          <div>
+            <div class="cc-tg">3 Months · Weekend Batches</div>
+            <div class="cc-nm">Professional Makeup Artistry</div>
+          </div>
+          <div class="cc-tgl">+</div>
+        </div>
+        <div class="cc-bd"><div class="cc-bdi">
+          <p class="cc-ds">Master editorial, bridal, HD, and everyday makeup techniques. Includes a personal kit allowance, live model sessions, and placement assistance upon graduation.</p>
+          <div class="cc-mt">
+            <div class="cc-mi"><div class="cc-ml">Fee</div><div class="cc-mv">₹ XYZ</div></div>
+            <div class="cc-mi"><div class="cc-ml">Seats</div><div class="cc-mv">12 Max</div></div>
+            <div class="cc-mi"><div class="cc-ml">Certificate</div><div class="cc-mv">Provided</div></div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="cc rv d2">
+        <div class="cc-hd" onclick="tCourse(this)">
+          <div>
+            <div class="cc-tg">6 Months · Full Time</div>
+            <div class="cc-nm">Advanced Hair Design</div>
+          </div>
+          <div class="cc-tgl">+</div>
+        </div>
+        <div class="cc-bd"><div class="cc-bdi">
+          <p class="cc-ds">Comprehensive training in precision cutting, balayage, global colour, keratin treatments, hair extensions, and foundational salon management. Internship included.</p>
+          <div class="cc-mt">
+            <div class="cc-mi"><div class="cc-ml">Fee</div><div class="cc-mv">₹ XYZ</div></div>
+            <div class="cc-mi"><div class="cc-ml">Seats</div><div class="cc-mv">10 Max</div></div>
+            <div class="cc-mi"><div class="cc-ml">Internship</div><div class="cc-mv">Included</div></div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="cc rv d3">
+        <div class="cc-hd" onclick="tCourse(this)">
+          <div>
+            <div class="cc-tg">45 Days · Intensive</div>
+            <div class="cc-nm">Skincare &amp; Aesthetics Diploma</div>
+          </div>
+          <div class="cc-tgl">+</div>
+        </div>
+        <div class="cc-bd"><div class="cc-bdi">
+          <p class="cc-ds">Covers facial treatments, machine-based therapies, advanced product knowledge, and client consultation frameworks. Open to all skill levels.</p>
+          <div class="cc-mt">
+            <div class="cc-mi"><div class="cc-ml">Fee</div><div class="cc-mv">₹ XYZ</div></div>
+            <div class="cc-mi"><div class="cc-ml">Seats</div><div class="cc-mv">8 Max</div></div>
+            <div class="cc-mi"><div class="cc-ml">Level</div><div class="cc-mv">All Levels</div></div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="cc rv d4">
+        <div class="cc-hd" onclick="tCourse(this)">
+          <div>
+            <div class="cc-tg">1 Month · Flexible Batches</div>
+            <div class="cc-nm">Nail Technician Certification</div>
+          </div>
+          <div class="cc-tgl">+</div>
+        </div>
+        <div class="cc-bd"><div class="cc-bdi">
+          <p class="cc-ds">Gel nails, acrylic extensions, intricate nail art, and hygiene best practices. A complete starter kit is provided to every student on enrolment.</p>
+          <div class="cc-mt">
+            <div class="cc-mi"><div class="cc-ml">Fee</div><div class="cc-mv">₹ XYZ</div></div>
+            <div class="cc-mi"><div class="cc-ml">Seats</div><div class="cc-mv">6 Max</div></div>
+            <div class="cc-mi"><div class="cc-ml">Kit</div><div class="cc-mv">Provided</div></div>
+          </div>
+        </div></div>
+      </div>
+
+    </div>
+
+    <div class="av-vis rvr">
+      <div class="av-fr">
+        <div class="av-mn">
+          
+          <svg viewBox="0 0 500 680" xmlns="http://www.w3.org/2000/svg">
+            <defs><radialGradient id="abg" cx="50%" cy="40%" r="70%"><stop offset="0%" stop-color="#3d2b1f"/><stop offset="100%" stop-color="#1a1210"/></radialGradient></defs>
+            <rect width="500" height="680" fill="url(#abg)"/>
+            <ellipse cx="250" cy="194" rx="128" ry="158" fill="none" stroke="rgba(196,168,130,.32)" stroke-width="2.5"/>
+            <ellipse cx="250" cy="194" rx="115" ry="145" fill="#110a07" opacity=".9"/>
+            <ellipse cx="250" cy="188" rx="56" ry="70" fill="#d4a882" opacity=".62"/>
+            <ellipse cx="232" cy="172" rx="11" ry="4.5" fill="#2c1a10" opacity=".85"/>
+            <ellipse cx="268" cy="172" rx="11" ry="4.5" fill="#2c1a10" opacity=".85"/>
+            <path d="M227 205 Q250 217 273 205" stroke="#c07060" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <ellipse cx="250" cy="146" rx="62" ry="34" fill="#3b2619" opacity=".9"/>
+            <text x="250" y="652" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="17" fill="rgba(196,168,130,.5)" font-style="italic">The Art of Professional Beauty</text>
+          </svg>
+        </div>
+        <div class="av-dc"></div>
+        <div class="av-st">
+          <span class="av-sn">280+</span>
+          <span class="av-sl">Graduates Placed</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="gallery">
+  <div class="g-hd">
+    <p class="ey rv" style="justify-content:center">Our Work</p>
+    <h2 class="st rv d1">A Glimpse of <em>Artistry</em></h2>
+    <div class="rule rv d2"></div>
+    <p class="sb rv d3">Beauty captured in its most refined moments. Each look tells its own story.</p>
+  </div>
+
+  <div class="gtabs rv d2">
+    <button class="gtab act" data-f="all">All Work</button>
+    <button class="gtab" data-f="makeup">Makeup</button>
+    <button class="gtab" data-f="hair">Hair</button>
+    <button class="gtab" data-f="nails">Nails</button>
+    <button class="gtab" data-f="academy">Academy</button>
+  </div>
+
+  
+  <div class="g-grid rv">
+
+    <div class="gi g1 gc1" data-c="makeup">
+      <div class="gi-in"><div class="gi-tx">Bridal Glam · Add photo here</div></div>
+      <div class="gi-ov"><span class="gi-lb">Bridal Glam</span></div>
+    </div>
+
+    <div class="gi g2 gc2" data-c="hair">
+      <div class="gi-in"><div class="gi-tx">Balayage Colour · Add photo here</div></div>
+      <div class="gi-ov"><span class="gi-lb">Balayage Colour</span></div>
+    </div>
+
+    <div class="gi g3 gc3" data-c="makeup">
+      <div class="gi-in"><div class="gi-tx">Editorial Look · Add photo here</div></div>
+      <div class="gi-ov"><span class="gi-lb">Editorial Look</span></div>
+    </div>
+
+    <div class="gi g4 gc4" data-c="hair">
+      <div class="gi-in"><div class="gi-tx">Soft Glam Blowout · Add photo here</div></div>
+      <div class="gi-ov"><span class="gi-lb">Soft Glam Blowout</span></div>
+    </div>
+
+    <div class="gi g5 gc5" data-c="nails">
+      <div class="gi-in"><div class="gi-tx">Nail Artistry · Add photo here</div></div>
+      <div class="gi-ov"><span class="gi-lb">Nail Artistry</span></div>
+    </div>
+
+    <div class="gi g6 gc6" data-c="academy">
+      <div class="gi-in"><div class="gi-tx">Academy Session · Add photo here</div></div>
+      <div class="gi-ov"><span class="gi-lb">Academy in Session</span></div>
+    </div>
+
+    <div class="gi g7 gc7" data-c="makeup">
+      <div class="gi-in"><div class="gi-tx">Bridal Updo · Add photo here</div></div>
+      <div class="gi-ov"><span class="gi-lb">Bridal Updo</span></div>
+    </div>
+
+    <div class="gi g8 gc8" data-c="nails">
+      <div class="gi-in"><div class="gi-tx">Skincare Glow · Add photo here</div></div>
+      <div class="gi-ov"><span class="gi-lb">Skincare Glow</span></div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="testimonials">
+  <div class="t-wrap">
+    <div class="rvl">
+      <p class="ey">Client Love</p>
+      <h2 class="st">What They<br><em>Say</em></h2>
+      <div class="rule"></div>
+      <p class="sb">Real words from real clients — stories of transformations, confidence, and glows that lasted long after they left our doors.</p>
+      <div class="t-ctr" id="tctr">01</div>
+    </div>
+    <div class="rvr">
+      <div class="t-tw"><div class="t-tr" id="tt">
+
+        <div class="t-sl">
+          <div class="t-st">★★★★★</div>
+          <p class="t-q">GlowUp transformed my entire wedding day. The team was so attentive and the look they created felt like the most beautiful version of myself I have ever seen. I cried happy tears.</p>
+          <div class="t-au">
+            <div class="t-av">S</div>
+            <div>
+              <div class="t-nm">Soha</div>
+              <div class="t-rl">Bridal Client · Asansol</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-sl">
+          <div class="t-st">★★★★★</div>
+          <p class="t-q">The makeup artistry course completely changed the direction of my life. I launched my own studio within five months of graduating. The mentorship and training here is genuinely world-class.</p>
+          <div class="t-au">
+            <div class="t-av">T</div>
+            <div>
+              <div class="t-nm">Tabassum</div>
+              <div class="t-rl">Academy Graduate · Durgapur</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-sl">
+          <div class="t-st">★★★★★</div>
+          <p class="t-q">I have been coming here for over a year for my skin treatments and I have honestly never looked better. The aestheticians truly listen and the results speak entirely for themselves.</p>
+          <div class="t-au">
+            <div class="t-av">T</div>
+            <div>
+              <div class="t-nm">Tofu</div>
+              <div class="t-rl">Regular Client · Asansol</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-sl">
+          <div class="t-st">★★★★★</div>
+          <p class="t-q">My hair colour transformation was nothing short of magical. The balayage they did exceeded every single expectation I had. I have not stopped receiving compliments since the day I walked out.</p>
+          <div class="t-au">
+            <div class="t-av">S</div>
+            <div>
+              <div class="t-nm">Soha</div>
+              <div class="t-rl">Hair Client · Asansol</div>
+            </div>
+          </div>
+        </div>
+
+      </div></div>
+
+      <div class="t-ct">
+        <button class="t-bt" id="tprev">←</button>
+        <div class="t-ds">
+          <div class="t-dt on"></div>
+          <div class="t-dt"></div>
+          <div class="t-dt"></div>
+          <div class="t-dt"></div>
+        </div>
+        <button class="t-bt" id="tnext">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="contact" style="padding:0;display:grid;grid-template-columns:1fr 1fr">
+
+  <div class="ci-p">
+    <p class="ey rv">Visit Us</p>
+    <h2 class="st rv d1">Let's Create<br><em>Together</em></h2>
+    <div class="rule rv d2"></div>
+    <p class="sb rv d3">We would love to welcome you. Walk in or schedule ahead — either way, a glow up awaits.</p>
+
+    <div class="ci-ds">
+
+      <div class="ci-d rv d1">
+        <div class="ci-ic">*</div>
+        <div>
+          <div class="ci-lb">Address</div>
+          <div class="ci-vl">GlowUp Beauty Studio, GT Road<br>Asansol, West Bengal – 713301</div>
+        </div>
+      </div>
+
+      <div class="ci-d rv d2">
+        <div class="ci-ic">o</div>
+        <div>
+          <div class="ci-lb">Phone</div>
+          <div class="ci-vl">+91 XXXXX XXXXX<br>+91 XXXXX XXXXX</div>
+        </div>
+      </div>
+
+      <div class="ci-d rv d3">
+        <div class="ci-ic">~</div>
+        <div>
+          <div class="ci-lb">Hours</div>
+          <div class="ci-vl">Mon – Sat: 9 AM – 8 PM<br>Sunday: 10 AM – 6 PM</div>
+        </div>
+      </div>
+
+      <div class="ci-d rv d4">
+        <div class="ci-ic">@</div>
+        <div>
+          <div class="ci-lb">Email</div>
+          <div class="ci-vl">
+            <a href="mailto:hello@glowup.in">hello@glowup.in</a><br>
+            <a href="mailto:academy@glowup.in">academy@glowup.in</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="ci-sc rv d5">
+      <a href="#" class="sa" title="Instagram">IG</a>
+      <a href="#" class="sa" title="Facebook">FB</a>
+      <a href="#" class="sa" title="YouTube">YT</a>
+      <a href="#" class="sa" title="WhatsApp">WA</a>
+    </div>
+
+    <div class="ci-cs">
+      <div class="ci-c cc1"></div>
+      <div class="ci-c cc2"></div>
+      <div class="ci-c cc3"></div>
+    </div>
+  </div>
+
+  <div class="cf-p rvr">
+    <p class="ey">Reservation</p>
+    <h3>Book Your Appointment</h3>
+    <div class="fgrid">
+      <div class="ff"><label>First Name</label><input type="text" placeholder="Your first name"/><div class="fln"></div></div>
+      <div class="ff"><label>Last Name</label><input type="text" placeholder="Your last name"/><div class="fln"></div></div>
+      <div class="ff"><label>Phone</label><input type="tel" placeholder="+91 00000 00000"/><div class="fln"></div></div>
+      <div class="ff"><label>Email</label><input type="email" placeholder="your@email.com"/><div class="fln"></div></div>
+      <div class="ff full">
+        <label>Service</label>
+        <select>
+          <option value="" disabled selected>Select a service</option>
+          <option>Bridal Makeup</option>
+          <option>Skin Treatment</option>
+          <option>Hair Styling</option>
+          <option>Nail Artistry</option>
+          <option>Body Rituals</option>
+          <option>Wellness &amp; Spa</option>
+          <option>Academy Enquiry</option>
+        </select>
+        <div class="fln"></div>
+      </div>
+      <div class="ff"><label>Preferred Date</label><input type="date"/><div class="fln"></div></div>
+      <div class="ff">
+        <label>Preferred Time</label>
+        <select>
+          <option value="" disabled selected>Select time</option>
+          <option>9:00 AM</option>
+          <option>10:00 AM</option>
+          <option>11:00 AM</option>
+          <option>12:00 PM</option>
+          <option>2:00 PM</option>
+          <option>3:00 PM</option>
+          <option>4:00 PM</option>
+          <option>5:00 PM</option>
+          <option>6:00 PM</option>
+        </select>
+        <div class="fln"></div>
+      </div>
+      <div class="ff full">
+        <label>Message</label>
+        <textarea placeholder="Any special requests or notes..."></textarea>
+        <div class="fln"></div>
+      </div>
+    </div>
+    <button class="fsub" id="fsub">
+      <span class="ft">Confirm Appointment →</span>
+      <span class="fs" style="display:none">Sending…</span>
+    </button>
+    <div class="f-ok" id="fok">
+      <p>Booking Received — We will be in touch within 24 hours!</p>
+    </div>
+  </div>
+
+</section>
+
+
+
+<footer>
+  <div class="ft-top">
+    <div class="ft-logo">Glow<em>Up</em></div>
+    <nav class="ft-lks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#academy">Academy</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="ft-bot">
+    <p class="ft-cp">© 2025 GlowUp Beauty Parlour &amp; Academy · Asansol, West Bengal · All Rights Reserved</p>
+    <p class="ft-tl">"Get a Glow Up."</p>
+  </div>
+  <div class="ft-riz">made by Riz</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
