@@ -1,29 +1,26 @@
 (function () {
-  const loaderFill = document.getElementById('lf');
-  const loaderPercent = document.getElementById('lpct');
-  const loader = document.getElementById('ldr');
-  if (!loader) return;
-  let progress = 0;
-  function hideLoader() {
-    loaderFill.style.width = '100%';
-    loaderPercent.textContent = '100%';
-    setTimeout(() => {
-      loader.classList.add('hidden');
-      setTimeout(() => { loader.style.display = 'none'; }, 900);
-    }, 300);
-  }
-  const loaderTimer = setInterval(() => {
-    progress += Math.random() * 18 + 5;
-    if (progress >= 100) {
-      clearInterval(loaderTimer);
-      hideLoader();
-      return;
+  var fill = document.getElementById('lf');
+  var pct  = document.getElementById('lpct');
+  var ldr  = document.getElementById('ldr');
+  var p = 0;
+
+  function tick() {
+    p += Math.random() * 12 + 4;
+    if (p > 100) p = 100;
+    fill.style.width = p + '%';
+    pct.textContent  = Math.floor(p) + '%';
+    if (p < 100) {
+      setTimeout(tick, 60);
+    } else {
+      setTimeout(function () {
+        ldr.style.opacity = '0';
+        ldr.style.pointerEvents = 'none';
+        setTimeout(function () { ldr.style.display = 'none'; }, 800);
+      }, 400);
     }
-    loaderFill.style.width = progress + '%';
-    loaderPercent.textContent = Math.floor(progress) + '%';
-  }, 70);
-  
-  setTimeout(() => { clearInterval(loaderTimer); hideLoader(); }, 3000);
+  }
+
+  tick();
 })();
 
 window.addEventListener('scroll', () => {
