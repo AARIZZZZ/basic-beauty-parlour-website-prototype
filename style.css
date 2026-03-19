@@ -54,9 +54,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .lh{position:absolute;top:0;left:0;color:var(--brown);transform:translateY(110%)}
 .n-links a:hover .lt{transform:translateY(-110%)}
 .n-links a:hover .lh{transform:translateY(0)}
-.n-cta{background:var(--dark)!important;color:var(--cream)!important;padding:10px 26px!important;font-size:.7rem!important;letter-spacing:.24em!important;position:relative;overflow:hidden;display:inline-flex;align-items:center;transition:background .3s,color .3s}
-.n-cta:hover{background:var(--brown)!important;color:var(--cream)!important}
-.n-cta .lt,.n-cta .lh{display:none}
+.n-cta{background:var(--dark)!important;color:var(--cream)!important;padding:10px 26px!important;font-size:.7rem!important;letter-spacing:.24em!important;display:inline-flex;align-items:center;transition:background .3s;overflow:visible;position:static}
+.n-cta:hover{background:var(--brown)!important}
 
 .ham{display:none;background:none;border:1px solid rgba(44,36,32,.15);width:44px;height:44px;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0;transition:border-color .3s}
 .ham:hover{border-color:var(--warm)}
